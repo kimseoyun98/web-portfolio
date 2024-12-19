@@ -1,3 +1,4 @@
+import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 import safeArea from "tailwindcss-safe-area";
 import tailwindAnimate from "tailwindcss-animate";
@@ -8,6 +9,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/tabs.js"
   ],
   theme: {
     extend: {
@@ -43,6 +45,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [safeArea, tailwindAnimate, tailwindScrollbarHide],
+  plugins: [safeArea,tailwindAnimate,tailwindScrollbarHide,nextui()],
 };
 export default config;

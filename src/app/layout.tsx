@@ -14,10 +14,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
         <link
-          href="https://fonts.cdnfonts.com/css/dm-sans"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
           rel="stylesheet"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/svg"

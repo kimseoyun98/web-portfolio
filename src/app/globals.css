@@ -20,7 +20,7 @@
   --font-size-xl: 1.25rem;
   --font-size-2xl: 1.375rem;
   --font-size-3xl: 1.5rem;
-  --font-size-4xl: 1.75rem; /* name */
+  --font-size-4xl: 1.75rem;
   --font-size-5xl: 1.875rem;
   --font-size-6xl: 2.125rem;
   --font-size-7xl: 2.25rem;
@@ -35,7 +35,8 @@
 body {
   color: #000;
   background: #f7f7f7;
-  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", "Pretentard", sans-serif;
+  cursor: pointer;
 }
 
 @layer base {
