@@ -31,34 +31,40 @@ const Page = () => {
   return (
     <div className="w-full h-full py-[40px] flex flex-col justify-center">
       {/* 언어 토글 버튼 */}
-      <div className="flex items-center mb-[30px] mx-auto">
+      <div
+        className="relative flex items-center mb-[30px] mx-auto w-[99px] h-[34px] bg-neutral-300 border-[2px] border-neutral-400 rounded-full shadow-short-default cursor-pointer"
+        onClick={toggleLanguage}
+      >
+        {/* 슬라이더 */}
         <div
-          className={`h-[34px] flex items-center rounded-full transition-all duration-300 ${
-            language === "ko" ? "bg-green-500" : "bg-gray-900"
+          className={`absolute w-[46px] h-[26px] bg-neutral-100 rounded-full transition-transform duration-300 ${
+            language === "ko" ? "translate-x-[46px]" : "translate-x-[4px]"
           }`}
-          onClick={toggleLanguage}
-        >
-          <div
-            className={`w-12 h-8 bg-black rounded-full shadow-md transition-transform duration-300 ${
-              language === "ko" ? "translate-x-12" : "translate-x-0"
-            }`}
-          ></div>
-          <div
-            className={`absolute left-0 w-12 h-8 flex justify-center items-center text-white font-semibold transition-opacity duration-300 z-100 ${
-              language === "ko" ? "opacity-0" : "opacity-100"
+        ></div>
+
+        {/* EN 버튼 */}
+        <div className="ml-[4px] flex-1 flex justify-center items-center z-10">
+          <span
+            className={`transition-colors duration-300 ${
+              language === "en" ? "text-neutral-900" : "text-neutral-500"
             }`}
           >
             EN
-          </div>
-          <div
-            className={`absolute right-0 w-12 h-8 flex justify-center items-center text-white font-semibold transition-opacity duration-300 z-100 ${
-              language === "ko" ? "opacity-100" : "opacity-0"
+          </span>
+        </div>
+
+        {/* KO 버튼 */}
+        <div className="mr-[4px] flex-1 flex justify-center items-center z-10">
+          <span
+            className={`transition-colors duration-300 ${
+              language === "ko" ? "text-neutral-900" : "text-neutral-500"
             }`}
           >
             KO
-          </div>
+          </span>
         </div>
       </div>
+
       <div className="md:w-[608px] min-w-[350px] pb-[30px] m-auto bg-white shadow-long rounded-[30px] overflow-hidden flex flex-col items-center justify-center">
         <main className="flex flex-col items-center justify-center w-full">
           <div className="relative h-[142px] w-full">
@@ -67,6 +73,7 @@ const Page = () => {
               alt="cover image"
               fill
               className="object-cover"
+              priority
             />
           </div>
           <div className="absolute top-[183px] left-1/2 -translate-x-1/2">
@@ -93,7 +100,7 @@ const Page = () => {
                 alt="github image"
                 width={32}
                 height={32}
-                className="transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
+                className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
             </a>
             <a
@@ -106,11 +113,11 @@ const Page = () => {
                 alt="notion image"
                 width={31.52}
                 height={31.6}
-                className="transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
+                className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
             </a>
             <a
-              href="www.linkedin.com/in/seoyunmari"
+              href="https://www.linkedin.com/in/seoyunmari/"
               target="_blank"
               rel="linkedIn link"
             >
@@ -119,7 +126,7 @@ const Page = () => {
                 alt="linkedin image"
                 width={31.52}
                 height={31.6}
-                className="transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
+                className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
             </a>
             <a
@@ -132,7 +139,7 @@ const Page = () => {
                 alt="velog image"
                 width={31.52}
                 height={31.6}
-                className="transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
+                className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
             </a>
           </div>
