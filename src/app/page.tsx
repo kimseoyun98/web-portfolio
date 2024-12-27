@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import useLanguageStore from "./store/useLanguageStore";
 import IconCheck from "./ui/IconCheck";
@@ -32,7 +31,7 @@ const Page = () => {
     <div className="w-full h-full py-[40px] flex flex-col justify-center">
       {/* 언어 토글 버튼 */}
       <div
-        className="relative flex items-center mb-[30px] mx-auto w-[99px] h-[34px] bg-neutral-300 border-[2px] border-neutral-400 rounded-full shadow-short-default cursor-pointer"
+        className="relative flex items-center mb-[30px] mx-auto w-[99px] h-[34px] bg-neutral-300 border-1.5 border-neutral-400 rounded-full shadow-short-default cursor-pointer"
         onClick={toggleLanguage}
       >
         {/* 슬라이더 */}
@@ -65,7 +64,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="md:w-[608px] min-w-[350px] pb-[30px] m-auto bg-white shadow-long rounded-[30px] overflow-hidden flex flex-col items-center justify-center">
+      <div className="sm:w-[608px] min-w-[350px] pb-[30px] m-auto bg-white shadow-long rounded-[30px] overflow-hidden flex flex-col items-center justify-center">
         <main className="flex flex-col items-center justify-center w-full">
           <div className="relative h-[142px] w-full">
             <Image
@@ -117,7 +116,7 @@ const Page = () => {
               />
             </a>
             <a
-              href="https://www.linkedin.com/in/seoyunmari/"
+              href="https://www.linkedin.com/in/seoyunmari"
               target="_blank"
               rel="linkedIn link"
             >
@@ -130,7 +129,7 @@ const Page = () => {
               />
             </a>
             <a
-              href="https://velog.io/@gimmari/posts"
+              href="https://velog.io/@gimmari"
               target="_blank"
               rel="velog link"
             >
@@ -145,35 +144,35 @@ const Page = () => {
           </div>
           <div className="flex flex-col w-full mx-auto items-center justify-center gap-[12px] mt-[30px]">
             <div className="flex w-[316px] sm:w-[400px] py-[9px] pl-[24px] pr-[9px] border border-neutral-300 rounded-[74.82px] justify-between shadow-short-default hover:bg-neutral-800 hover:text-neutral-100 hover:shadow-none transition-colors duration-150 ease-in-out">
-              <p className="flex items-center text-left text-md font-bold">
+              <h2 className="flex items-center text-left text-md font-bold">
                 {text.portfolio}
-              </p>
+              </h2>
               <a
                 className="group inline-flex items-center justify-center"
                 href="https://about me link"
                 target="_blank"
-                rel="about me link"
+                rel="fe developer portfolio"
               >
                 <IconCheck />
               </a>
             </div>
             <div className="flex w-[316px] sm:w-[400px] py-[9px] pl-[24px] pr-[9px] border border-neutral-300 rounded-[74.82px] justify-between shadow-short-default hover:bg-neutral-800 hover:text-neutral-100 hover:shadow-none transition-colors duration-150 ease-in-out">
-              <p className="flex items-center text-left text-md font-bold">
+              <h2 className="flex items-center text-left text-md font-bold">
                 {text.design}
-              </p>
+              </h2>
               <a
                 className="group inline-flex items-center justify-center"
                 href="https://about me link"
                 target="_blank"
-                rel="about me link"
+                rel="ux ui designer portfolio"
               >
                 <IconCheck />
               </a>
             </div>
             <div className="flex w-[316px] sm:w-[400px] py-[9px] pl-[24px] pr-[9px] border border-neutral-300 rounded-[74.82px] justify-between shadow-short-default hover:bg-neutral-800 hover:text-neutral-100 hover:shadow-none transition-colors duration-150 ease-in-out">
-              <p className="flex items-center text-left text-md font-bold">
+              <h2 className="flex items-center text-left text-md font-bold">
                 {text.about}
-              </p>
+              </h2>
               <a
                 className="group inline-flex items-center justify-center"
                 href="https://about me link"

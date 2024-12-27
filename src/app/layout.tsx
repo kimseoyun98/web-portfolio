@@ -2,8 +2,27 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Seoyun Portfolio",
-  description: "Seoyun Portfolio Link",
+  title: "서연의 포트폴리오",
+  description:
+    "포트폴리오 링크를 탐색하세요. (GitHub, Notion, Velog, LinkedIn)",
+  themeColor: "#ffffff",
+  openGraph: {
+    title: "서연의 포트폴리오",
+    siteName: "서연의 포트폴리오",
+    description:
+      "포트폴리오 링크를 탐색하세요. (GitHub, Notion, Velog, LinkedIn)",
+    url: "https://github.com/kimseoyun98/web-portfolio.git",
+    images: ["/cover.svg"],
+    locale: "ko_KO",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "서연의 포트폴리오",
+    description:
+      "포트폴리오 링크를 탐색하세요. (GitHub, Notion, Velog, LinkedIn)",
+    images: ["/cover.svg"],
+  },
 };
 
 export default function RootLayout({
@@ -12,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <head>
         <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
         <link
@@ -23,7 +42,7 @@ export default function RootLayout({
           rel="icon"
           type="image/svg"
           sizes="32x32"
-          href="/favicon-32x32.svg"
+          href="/favicon-14x14.svg"
         />
         <link
           rel="icon"
