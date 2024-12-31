@@ -1,8 +1,9 @@
 "use client";
+
 import Image from "next/image";
 import useLanguageStore from "./store/useLanguageStore";
 import IconCheck from "./ui/IconCheck";
-import Link from "next/link";
+import CustomModal from "@/components/AboutModal";
 
 const Page = () => {
   const { language, toggleLanguage } = useLanguageStore();
@@ -15,6 +16,9 @@ const Page = () => {
       portfolio: "👩🏻‍💻 Visit my FE portfolio",
       design: "📝 Visit my Design portfolio",
       about: "🎙 About Me!",
+      aboutMeTitle: "Hello 🥰 I'm Seoyun Kim.\nA versatile talent of this era!",
+      aboutMeContent:
+        "*✔︎ nickname*   -   MARI\n*✔︎ birth*   -   1998.10.31\n*✔︎ tel*   -   010-5933-5514\n*✔︎ email*   -   seoyunkim98@gmail.com\n*✔︎ MBTI*   -   ESTP",
     },
     ko: {
       name: "김서연",
@@ -23,6 +27,9 @@ const Page = () => {
       portfolio: "👩🏻‍💻 프론트엔드 개발자 포트폴리오",
       design: "📝 UX/UI 디자인 포트폴리오",
       about: "🎙 나를 소개합니다!",
+      aboutMeTitle: "안녕하세요 🥰\n이 시대의 웅합형 인재 김서연입니다!",
+      aboutMeContent:
+        "*✔︎ 닉네임*   -    마리\n*✔︎ 생년월일*   -    1998.10.31\n*✔︎ 전화번호*   -    010-5933-5514\n*✔︎ 이메일*   -    seoyunkim98@gmail.com\n*✔︎ MBTI*   -    ESTP",
     },
   };
   const text = content[language];
@@ -64,7 +71,6 @@ const Page = () => {
           </span>
         </div>
       </div>
-
       <div className="sm:w-[608px] min-w-[350px] pb-[30px] m-auto bg-white shadow-long rounded-[30px] overflow-hidden flex flex-col items-center justify-center">
         <main className="flex flex-col items-center justify-center w-full">
           <div className="relative h-[142px] w-full">
@@ -111,8 +117,8 @@ const Page = () => {
               <Image
                 src="/notion.svg"
                 alt="notion image"
-                width={31.52}
-                height={31.6}
+                width={32}
+                height={32}
                 className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
             </a>
@@ -125,7 +131,7 @@ const Page = () => {
                 src="/linkedin.svg"
                 alt="linkedin image"
                 width={32}
-                height={33}
+                height={32}
                 className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
             </a>
@@ -137,8 +143,8 @@ const Page = () => {
               <Image
                 src="/velog.svg"
                 alt="velog image"
-                width={31.52}
-                height={31.6}
+                width={32}
+                height={32}
                 className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
             </a>
@@ -174,12 +180,28 @@ const Page = () => {
               <h2 className="flex items-center text-left text-md font-bold">
                 {text.about}
               </h2>
-              <Link
-                href="/aboutme"
-                className="group inline-flex items-center justify-center"
-              >
-                <IconCheck />
-              </Link>
+              <CustomModal
+                title={
+                  <p
+                    className="text-center text-xl mt-4 font-bold"
+                    dangerouslySetInnerHTML={{
+                      __html: text.aboutMeTitle
+                        .replace(/\n/g, "<br />")
+                        .replace(/\*([^*]+)\*/g, "<b>$1</b>"),
+                    }}
+                  />
+                }
+                content={
+                  <p
+                    className="mx-auto"
+                    dangerouslySetInnerHTML={{
+                      __html: text.aboutMeContent
+                        .replace(/\n/g, "<br />")
+                        .replace(/\*([^*]+)\*/g, "<b>$1</b>"),
+                    }}
+                  />
+                }
+              />
             </div>
           </div>
         </main>
@@ -187,7 +209,7 @@ const Page = () => {
       <div className="w-full mx-auto mt-10">
         <p className="text-center text-neutral-600">
           Designed and Published by Mari.
-          <br />© 2024 Mari. All rights reserved.
+          <br />© 2025 Mari. All rights reserved.
         </p>
       </div>
     </div>

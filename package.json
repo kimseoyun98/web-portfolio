@@ -9,6 +9,7 @@
     "build": "next build"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.6.10",
     "@nextui-org/system": "^2.4.4",
     "@nextui-org/tabs": "^2.2.5",
     "@nextui-org/theme": "^2.4.3",
@@ -27,9 +28,9 @@
     "@types/react-dom": "^19",
     "eslint": "^8",
     "eslint-config-next": "15.0.4",
-    "gh-pages": "^6.2.0",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "yarn@4.5.0+sha512.837566d24eec14ec0f5f1411adb544e892b3454255e61fdef8fd05f3429480102806bac7446bc9daff3896b01ae4b62d00096c7e989f1596f2af10b927532f39"
 }

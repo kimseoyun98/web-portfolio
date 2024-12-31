@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "서연의 포트폴리오",
   description:
     "포트폴리오 링크를 탐색하세요. (GitHub, Notion, Velog, LinkedIn)",
-  themeColor: "#ffffff",
+
   openGraph: {
     title: "서연의 포트폴리오",
     siteName: "서연의 포트폴리오",
