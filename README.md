@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=transparent&color=auto&height=200&section=header&text=Portfolio-Website&fontColor=9DB9C7&animation=twinkling&fontSize=90&textBg=false)
+![header](https://capsule-render.vercel.app/api?type=transparent&color=auto&height=200&section=header&text=Portfolio-Website&fontColor=9DB9C7&fontSize=60&textBg=false)
 
 ![Open Graph](public/opengraph.png)
 
@@ -6,7 +6,7 @@
 </br>
 </br>
  
-<div align="center" style="font-size:24px;font-weight: bold;">📂 폴더 구조</div>
+<div align="center" style="font-size:60px;font-weight: bold;">📂 폴더 구조</div>
 </br>
 
 ```
@@ -27,17 +27,17 @@
 </br>
 </br>
 
- <div align="center" style="font-size:24px;font-weight: bold;">🛠 Trouble Shooting</div>
+ <div align="center" style="font-size:60px;font-weight: bold;">🛠 Trouble Shooting
 
 [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=gimmari&tag=web-portfolio&color=dark)](https://velog.io/@gimmari/트러블슈팅)
 
+</div>
+
 </br>
 </br>
 </br>
 
-<p align="center" style="font-size:24px;font-weight: bold;">
-
-<p align="center" style="font-size:24px;font-weight: bold;">
+<p align="center" style="font-size:60px;font-weight: bold;">
 📋 Languages
 
 <div align="center" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
@@ -49,7 +49,7 @@
 
 </br>
 
-<p align="center" style="font-size:24px;font-weight: bold;">📚 Frameworks, Libraries
+<p align="center" style="font-size:60px;font-weight: bold;">📚 Frameworks, Libraries
 
 <div align="center" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
 
@@ -61,7 +61,7 @@
 
 </br>
 
-<p align="center" style="font-size:24px;font-weight: bold;">🎨 Design
+<p align="center" style="font-size:60px;font-weight: bold;">🎨 Design
 
 <div align="center">
 
@@ -69,7 +69,7 @@
 
 </br>
 
-<p align="center" style="font-size:24px;font-weight: bold;">☁️ Hosting
+<p align="center" style="font-size:60px;font-weight: bold;">☁️ Hosting
 
 <div align="center">
 
@@ -77,7 +77,7 @@
 
 </br>
 
-<p align="center" style="font-size:24px;font-weight: bold;">
+<p align="center" style="font-size:60px;font-weight: bold;">
 💻 IDEs/Editors
 
 <div align="center">
