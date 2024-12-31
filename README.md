@@ -1,13 +1,11 @@
 ![header](https://capsule-render.vercel.app/api?type=transparent&color=auto&height=200&section=header&text=Portfolio-Website&fontColor=9DB9C7&fontSize=60&textBg=false)
-
 ![Open Graph](public/opengraph.png)
 
 </br>
 </br>
 </br>
  
-<div align="center" style="font-size:60px;font-weight: bold;">📂 폴더 구조</div>
-</br>
+<h1 align="center" style="font-size:60;font-weight: bold;">📂 폴더 구조</h1>
 
 ```
 ┣ 📦src
@@ -27,7 +25,7 @@
 </br>
 </br>
 
- <div align="center" style="font-size:60px;font-weight: bold;">🛠 Trouble Shooting
+ <h1 align="center" style="font-size:60;font-weight: bold;">🛠 Trouble Shooting
 
 [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=gimmari&tag=web-portfolio&color=dark)](https://velog.io/@gimmari/트러블슈팅)
 
