@@ -124,8 +124,8 @@ const Page = () => {
               <Image
                 src="/linkedin.svg"
                 alt="linkedin image"
-                width={31.52}
-                height={31.6}
+                width={32}
+                height={33}
                 className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
             </a>
