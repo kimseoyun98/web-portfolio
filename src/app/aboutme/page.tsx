@@ -1,7 +1,3 @@
-export async function generateStaticParams() {
-  return [{ params: { slug: "aboutme" } }];
-}
-
 const AboutMePage = () => {
   return (
     <div>
