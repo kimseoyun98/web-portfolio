@@ -129,7 +129,7 @@ const Page = () => {
               rel="linkedIn link"
             >
               <Image
-                src="/linkedIn.svg"
+                src="/linkedIn-new.svg"
                 alt="linkedIn image"
                 width={32}
                 height={32}
