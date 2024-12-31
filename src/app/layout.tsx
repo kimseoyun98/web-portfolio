@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "서연의 포트폴리오",
     description:
       "포트폴리오 링크를 탐색하세요. (GitHub, Notion, Velog, LinkedIn)",
-    url: "https://seoyun-web-portfolio.com",
+    url: "https://web-portfolio-maris-projects-f46cfcf3.vercel.app/",
     images: ["/cover.svg"],
     locale: "ko_KO",
     type: "website",
