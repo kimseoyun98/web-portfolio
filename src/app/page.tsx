@@ -2,6 +2,7 @@
 import Image from "next/image";
 import useLanguageStore from "./store/useLanguageStore";
 import IconCheck from "./ui/IconCheck";
+import Link from "next/link";
 
 const Page = () => {
   const { language, toggleLanguage } = useLanguageStore();
@@ -149,7 +150,7 @@ const Page = () => {
               </h2>
               <a
                 className="group inline-flex items-center justify-center"
-                href="https://about me link"
+                href="https://marisportfolio-developer.notion.site/"
                 target="_blank"
                 rel="fe developer portfolio"
               >
@@ -162,7 +163,7 @@ const Page = () => {
               </h2>
               <a
                 className="group inline-flex items-center justify-center"
-                href="https://about me link"
+                href="https://marisportfolio-designer.notion.site/"
                 target="_blank"
                 rel="ux ui designer portfolio"
               >
@@ -173,20 +174,18 @@ const Page = () => {
               <h2 className="flex items-center text-left text-md font-bold">
                 {text.about}
               </h2>
-              <a
+              <Link
+                href="/aboutme"
                 className="group inline-flex items-center justify-center"
-                href="https://about me link"
-                target="_blank"
-                rel="about me link"
               >
                 <IconCheck />
-              </a>
+              </Link>
             </div>
           </div>
         </main>
       </div>
       <div className="w-full mx-auto mt-10">
-        <p className="text-center">
+        <p className="text-center text-neutral-600">
           Designed and Published by Mari.
           <br />© 2024 Mari. All rights reserved.
         </p>

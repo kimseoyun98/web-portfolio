@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     siteName: "서연의 포트폴리오",
     description:
       "포트폴리오 링크를 탐색하세요. (GitHub, Notion, Velog, LinkedIn)",
-    url: "https://github.com/kimseoyun98/web-portfolio.git",
+    url: "https://seoyun-web-portfolio.com",
     images: ["/cover.svg"],
     locale: "ko_KO",
     type: "website",
