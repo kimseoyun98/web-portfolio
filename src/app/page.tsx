@@ -4,6 +4,7 @@ import Image from "next/image";
 import useLanguageStore from "./store/useLanguageStore";
 import IconCheck from "./ui/IconCheck";
 import CustomModal from "@/components/AboutModal";
+import Link from "next/link";
 
 const Page = () => {
   const { language, toggleLanguage } = useLanguageStore();
@@ -96,7 +97,7 @@ const Page = () => {
             <div dangerouslySetInnerHTML={{ __html: formattedDescription }} />
           </div>
           <div className="flex justify-center gap-[10px] mt-[16px]">
-            <a
+            <Link
               href="https://github.com/kimseoyun98"
               target="_blank"
               rel="github link"
@@ -108,8 +109,8 @@ const Page = () => {
                 height={32}
                 className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.notion.so/marisportfolio/DesignedBy-Mari-13d32ee427364e50a1ffbc50e7f283ba"
               target="_blank"
               rel="notion link"
@@ -121,8 +122,8 @@ const Page = () => {
                 height={32}
                 className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/seoyunmari"
               target="_blank"
               rel="linkedIn link"
@@ -134,8 +135,8 @@ const Page = () => {
                 height={32}
                 className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://velog.io/@gimmari"
               target="_blank"
               rel="velog link"
@@ -147,34 +148,34 @@ const Page = () => {
                 height={32}
                 className="rounded-full transition-transform duration-200 ease-in-out transform hover:scale-110 hover:shadow-short-hover"
               />
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col w-full mx-auto items-center justify-center gap-[12px] mt-[30px]">
             <div className="flex w-[316px] sm:w-[400px] py-[9px] pl-[24px] pr-[9px] border border-neutral-300 rounded-[74.82px] justify-between shadow-short-default hover:bg-neutral-800 hover:text-neutral-100 hover:shadow-none transition-colors duration-150 ease-in-out">
               <h2 className="flex items-center text-left text-md font-bold">
                 {text.portfolio}
               </h2>
-              <a
+              <Link
                 className="group inline-flex items-center justify-center"
                 href="https://marisportfolio-developer.notion.site/"
                 target="_blank"
                 rel="fe developer portfolio"
               >
                 <IconCheck />
-              </a>
+              </Link>
             </div>
             <div className="flex w-[316px] sm:w-[400px] py-[9px] pl-[24px] pr-[9px] border border-neutral-300 rounded-[74.82px] justify-between shadow-short-default hover:bg-neutral-800 hover:text-neutral-100 hover:shadow-none transition-colors duration-150 ease-in-out">
               <h2 className="flex items-center text-left text-md font-bold">
                 {text.design}
               </h2>
-              <a
+              <Link
                 className="group inline-flex items-center justify-center"
                 href="https://marisportfolio-designer.notion.site/"
                 target="_blank"
                 rel="ux ui designer portfolio"
               >
                 <IconCheck />
-              </a>
+              </Link>
             </div>
             <div className="flex w-[316px] sm:w-[400px] py-[9px] pl-[24px] pr-[9px] border border-neutral-300 rounded-[74.82px] justify-between shadow-short-default hover:bg-neutral-800 hover:text-neutral-100 hover:shadow-none transition-colors duration-150 ease-in-out">
               <h2 className="flex items-center text-left text-md font-bold">
