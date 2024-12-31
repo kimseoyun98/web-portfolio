@@ -5,7 +5,7 @@
 </br>
 </br>
  
-<h1 align="center" style="font-size:60;font-weight: bold;">📂 폴더 구조</h1>
+<p align="center" style="font-size:60px;font-weight: bold;">📂 폴더 구조</p>
 
 ```
 ┣ 📦src
@@ -25,7 +25,7 @@
 </br>
 </br>
 
- <h1 align="center" style="font-size:60;font-weight: bold;">🛠 Trouble Shooting
+ <div align="center" style="font-size:60px;font-weight: bold;">🛠 Trouble Shooting
 
 [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=gimmari&tag=web-portfolio&color=dark)](https://velog.io/@gimmari/트러블슈팅)
 
