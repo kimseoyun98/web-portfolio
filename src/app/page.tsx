@@ -72,7 +72,7 @@ const Page = () => {
           </span>
         </div>
       </div>
-      <div className="sm:w-[608px] min-w-[350px] pb-[30px] m-auto bg-white shadow-long rounded-[30px] overflow-hidden flex flex-col items-center justify-center">
+      <div className="sm:w-[608px] min-w-[350px] pb-[50px] m-auto bg-white shadow-long rounded-[30px] overflow-hidden flex flex-col items-center justify-center">
         <main className="flex flex-col items-center justify-center w-full">
           <div className="relative h-[142px] w-full">
             <Image
