@@ -23,6 +23,7 @@ const IconCheck = () => (
     <path
       d="M30 29.2324V16.5913H17.3906"
       className="transition-colors duration-300 ease-in-out stroke-neutral-500 group-hover:stroke-neutral-800"
+      strokeWidth="1.87057"
       strokeLinecap="round"
       strokeLinejoin="round"
     />

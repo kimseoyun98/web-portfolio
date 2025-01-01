@@ -81,6 +81,7 @@ const Page = () => {
               fill
               className="object-cover"
               priority
+              quality={100}
             />
           </div>
           <div className="absolute top-[183px] left-1/2 -translate-x-1/2">
